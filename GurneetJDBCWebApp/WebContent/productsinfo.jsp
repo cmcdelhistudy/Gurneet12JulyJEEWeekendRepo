@@ -18,7 +18,7 @@
 				ArrayList<Product> plist=	(ArrayList<Product>)request.getAttribute("PRODUCT_LIST");
 							
 						for(Product p:plist){
-							out.println("<tr><td>"+p.getId()+"</td><td>"+p.getName()+"</td><td>"+p.getPrice()+"</td></tr>");				
+							out.println("<tr><td>"+p.getId()+"</td><td>"+p.getName()+"</td><td>"+p.getPrice()+"</td><td><a href='DeleteProductServlet?id="+p.getId()+"'><img src='cancel.png' height='10' width='10'></a></td></tr>");				
 					    }
 			%>
 		</table>
